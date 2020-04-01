@@ -71,7 +71,8 @@ marginRight:40,
     paddingTop:30,
         marginBottom: 30,
         textAlign: "center",
-        color:"blue"
+        color:"blue",
+        fontSize:40,
     
   },
   
@@ -98,8 +99,9 @@ function Form(props) {
       <div className={classes.main}>
         <div><Typography className={classes.typo}>Interview Form</Typography></div>
         <div className={classes.photo}>
-        <TextField
-                id="Upload Your photo here"
+        
+    <TextField
+                id="Upload Photo"
                 type="file"
                 style={{ display: "none" }}
                 variant="outlined"
@@ -107,19 +109,16 @@ function Form(props) {
                 margin="normal"
                 className={classes.textField}
               />
-              
-              <label htmlFor="Upload Your photo here ">
+              <label htmlFor="Upload Photo">
                 <TextField
-                  label=" Upload Photo"
-                  
+                  label="Upload Photo"
                   variant="outlined"
                   margin="normal"
                   className={classes.textField}
                   InputProps={{
                     endAdornment: (
                       <InputAdornment position="end" className={classes.icon}>
-                        
-                        <PhotoCameraIcon />
+                        <PhotoCameraIcon/>
                       </InputAdornment>
                     )
                   }}
