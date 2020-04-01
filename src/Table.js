@@ -62,6 +62,21 @@ marginRight:40,
         textAlign: "center",
         color:"blue"
     
+  },
+  root: {
+    width: 600,
+    height: 600,
+    marginLeft: 400,
+    marginRight: 45,
+    marginTop: 60,
+    
+    "&:hover": {
+      // backgroundColor: 'rgb(7, 177, 77, 0.42)'
+      // border: "solid",
+      // padding: 10,
+      // boxShadow: 10
+      boxShadow: "0 3px 6px 0 rgba(0, 0, 0, 0.70)"
+    }
   }
  
 }));
@@ -77,7 +92,9 @@ function Details(props) {
   console.log(info);
   return (
     <div>
-    <div>info.firstname</div>
+   <Card className={classes.root}>
+     hi
+   </Card>
     
      
     </div>

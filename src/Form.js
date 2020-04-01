@@ -9,6 +9,7 @@ import TextField from "@material-ui/core/TextField";
 import CloudUploadIcon from "@material-ui/icons/CloudUpload";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import Button from "@material-ui/core/Button";
+import PhotoCameraIcon from "@material-ui/icons/PhotoCamera";
 import Details from "./Table";
 
 import { withRouter } from 'react-router';
@@ -31,6 +32,7 @@ const useStyles = makeStyles(theme => ({
       boxShadow: "0 3px 6px 0 rgba(0, 0, 0, 0.70)"
     }
   },
+  
   button: {
     float: "Right",
     marginTop: 20,
@@ -38,6 +40,13 @@ const useStyles = makeStyles(theme => ({
   },
   textTransform: {
     textTransform: "capitalize"
+  },
+  photo:{
+marginLeft:10,
+marginRight:10,
+width:170,
+marginTop:15,
+
   },
   textField: {
     marginLeft: theme.spacing(1),
@@ -64,6 +73,13 @@ marginRight:40,
         textAlign: "center",
         color:"blue"
     
+  },
+  
+
+  main:{
+    display: "flex",
+    flexDirection: "row",
+    justifyContent:"space-around",
   }
  
 }));
@@ -79,9 +95,41 @@ function Form(props) {
     <div>
       
     <Card className={classes.root}>
-    <Typography className={classes.typo}>
-      Interview form            
-    </Typography>
+      <div className={classes.main}>
+        <div><Typography className={classes.typo}>Interview Form</Typography></div>
+        <div className={classes.photo}>
+        <TextField
+                id="Upload Your photo here"
+                type="file"
+                style={{ display: "none" }}
+                variant="outlined"
+                
+                margin="normal"
+                className={classes.textField}
+              />
+              
+              <label htmlFor="Upload Your photo here ">
+                <TextField
+                  label=" Upload Photo"
+                  
+                  variant="outlined"
+                  margin="normal"
+                  className={classes.textField}
+                  InputProps={{
+                    endAdornment: (
+                      <InputAdornment position="end" className={classes.icon}>
+                        
+                        <PhotoCameraIcon />
+                      </InputAdornment>
+                    )
+                  }}
+                />
+              </label>
+             
+
+          
+        </div>
+      </div>
     <div className={classes.div1}>
     <TextField
              
