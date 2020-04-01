@@ -10,8 +10,7 @@ import CloudUploadIcon from "@material-ui/icons/CloudUpload";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import Button from "@material-ui/core/Button";
 import PhotoCameraIcon from "@material-ui/icons/PhotoCamera";
-import Details from "./Table";
-
+import Table from "./Table";
 import { withRouter } from 'react-router';
 
 
@@ -90,10 +89,10 @@ function Form(props) {
   const classes = useStyles();
 
   let click=()=>{
-    props.history.push("/Details");
+    props.history.push("/Table");
   }
   return (
-    <div>
+    <div >
       
     <Card className={classes.root}>
       <div className={classes.main}>

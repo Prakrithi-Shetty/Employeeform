@@ -1,16 +1,85 @@
-
 import React, { useState, useEffect } from "react";
 import Card from "@material-ui/core/Card";
 import { makeStyles } from "@material-ui/core/styles";
-import CardActions from "@material-ui/core/CardActions";
-import Typography from "@material-ui/core/Typography";
-import CardContent from "@material-ui/core/CardContent";
-import TextField from "@material-ui/core/TextField";
-import CloudUploadIcon from "@material-ui/icons/CloudUpload";
-import InputAdornment from "@material-ui/core/InputAdornment";
-import Button from "@material-ui/core/Button";
-import { withRouter } from 'react-router';
+import Swipe from "./Components/Swipe/Swipe";
 
+const images = [
+	'https://picsum.photos/400/300/?image=926',
+	'https://picsum.photos/400/300/?image=925',
+	'https://picsum.photos/400/300/?image=924',
+	'https://picsum.photos/400/300/?image=923',
+	'https://picsum.photos/400/300/?image=922',
+	'https://picsum.photos/400/300/?image=921',
+];
+
+const profiles = [
+  {
+    "image": "https://picsum.photos/400/300/?image=926",
+    "firstname": "name0",
+    "lastname": "last0",
+    "dob": "1 jan 2020",
+    "phonenumber": "292929012",
+    "totalYearsExp": "5",
+    "currentCompany": " Flipkart",
+    "currentCtc": "8L",
+    "expectedCtc": "10L"
+  },
+  {
+    "image": "https://picsum.photos/400/300/?image=925",
+    "firstname": "name1",
+    "lastname": "last1",
+    "dob": "1 jan 2020",
+    "phonenumber": "292929012",
+    "totalYearsExp": "5",
+    "currentCompany": " Flipkart",
+    "currentCtc": "8L",
+    "expectedCtc": "10L"
+  },
+  {
+    "image": "https://picsum.photos/400/300/?image=924",
+    "firstname": "name2",
+    "lastname": "last2",
+    "dob": "1 jan 2020",
+    "phonenumber": "292929012",
+    "totalYearsExp": "5",
+    "currentCompany": " Flipkart",
+    "currentCtc": "8L",
+    "expectedCtc": "10L"
+  },
+  {
+    "image": "https://picsum.photos/400/300/?image=923",
+    "firstname": "name3",
+    "lastname": "last3",
+    "dob": "1 jan 2020",
+    "phonenumber": "292929012",
+    "totalYearsExp": "5",
+    "currentCompany": " Flipkart",
+    "currentCtc": "8L",
+    "expectedCtc": "10L"
+  },
+  {
+    "image": "https://picsum.photos/400/300/?image=922",
+    "firstname": "name4",
+    "lastname": "last4",
+    "dob": "1 jan 2020",
+    "phonenumber": "292929012",
+    "totalYearsExp": "5",
+    "currentCompany": " Flipkart",
+    "currentCtc": "8L",
+    "expectedCtc": "10L"
+  },
+  {
+    "image": "https://picsum.photos/400/300/?image=921",
+    "firstname": "name5",
+    "lastname": "last5",
+    "dob": "1 jan 2020",
+    "phonenumber": "292929012",
+    "totalYearsExp": "5",
+    "currentCompany": " Flipkart",
+    "currentCtc": "8L",
+    "expectedCtc": "10L"
+  }
+]
 
 
 const useStyles = makeStyles(theme => ({
@@ -80,26 +149,16 @@ marginRight:40,
   }
  
 }));
+
 function Details(props) {
   const classes = useStyles();
-
-  const a={
- firstname:"prakrithi",
- lastname:"shetty"
-  };
-
-  const[info,setinfo]=useState(a);
-  console.log(info);
   return (
     <div>
    <Card className={classes.root}>
-     hi
+     <Swipe images={images} profiles={profiles} />
    </Card>
-    
-     
     </div>
-    
   );
 }
 
-export default withRouter(Details);
+export default Details;
