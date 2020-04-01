@@ -1,16 +1,16 @@
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Card from "@material-ui/core/Card";
 import { makeStyles } from "@material-ui/core/styles";
-import CardActions from "@material-ui/core/CardActions";
+
 import Typography from "@material-ui/core/Typography";
-import CardContent from "@material-ui/core/CardContent";
+
 import TextField from "@material-ui/core/TextField";
 import CloudUploadIcon from "@material-ui/icons/CloudUpload";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import Button from "@material-ui/core/Button";
 import PhotoCameraIcon from "@material-ui/icons/PhotoCamera";
-import Table from "./Table";
+
 import { withRouter } from 'react-router';
 
 
@@ -66,7 +66,7 @@ marginRight:40,
   typo:{
   
         fontFamily: "Roboto medium",
-        fontSize: 28,
+        
     paddingTop:30,
         marginBottom: 30,
         textAlign: "center",

@@ -1,7 +1,7 @@
 import React from "react";
 import {Swipeable} from 'react-swipeable';
 import './Swipe.css';
-import Typography from "@material-ui/core/Typography";
+
 
 class Swipe extends React.Component {
 	constructor() {
@@ -33,7 +33,7 @@ class Swipe extends React.Component {
 	}
 
 	render() {
-		const { images, profiles } = this.props;
+		const { profiles } = this.props;
 		const { currentIndex } = this.state;
 		
 		return (
@@ -42,7 +42,7 @@ class Swipe extends React.Component {
 					{profiles.map((p, index) => {
 						let img = p.image;
 						let className = 'carousel__image';
-						let pName = 'carousel__name';
+						
 
 						if (index === currentIndex) className += ' active';
 						
@@ -57,7 +57,7 @@ class Swipe extends React.Component {
 								<div className={className}>
 									{/* <Typography className={"typo"}>Interview Form</Typography> */}
                                     
-										<img className={"image"} src={p.image} />
+										<img className={"image"} src={p.image} alt={"Sorry"} />
 									
                                     <table >
   <tr className="tr">
@@ -88,11 +88,7 @@ class Swipe extends React.Component {
     <th className="th">Expected CTC</th>
     <td className="td">{p.expectedCtc}</td>
   </tr>
-  {/* <tr className="tr">
-    <th className="th">Firstname</th>
-    <td className="td">{p.firstname}</td>
-  </tr>
-   */}
+  
 </table>
 
 								</div>
