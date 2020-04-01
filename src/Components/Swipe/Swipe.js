@@ -1,6 +1,7 @@
 import React from "react";
 import {Swipeable} from 'react-swipeable';
 import './Swipe.css';
+import Typography from "@material-ui/core/Typography";
 
 class Swipe extends React.Component {
 	constructor() {
@@ -54,17 +55,45 @@ class Swipe extends React.Component {
 						onSwipedRight={()=>this.showNextSet()}
 						>
 								<div className={className}>
-									<div>Name: {p.firstname}</div>
-                                    <div>
-										<img width={80} src={p.image} />
-									</div>
-									<div>Name: {p.firstname}</div>
-									<div>dob: {p.dob}</div>
-									<div>phonenumber: {p.phonenumber}</div>
-									<div>totalYearsExp: {p.totalYearsExp}</div>
-									<div>currentCompany: {p.currentCompany}</div>
-									<div>currentCtc: {p.currentCtc}</div>
-									<div>expectedCtc: {p.expectedCtc}</div>
+									{/* <Typography className={"typo"}>Interview Form</Typography> */}
+                                    
+										<img className={"image"} src={p.image} />
+									
+                                    <table >
+  <tr className="tr">
+    <th className="th">First Name</th>
+    <td className="td">{p.firstname}</td>
+  </tr>
+  <tr className="tr">
+    <th className="th">Last Name</th>
+    <td className="td">{p.lastname}</td>
+  </tr>
+  <tr className="tr">
+    <th className="th">Phone Number</th>
+    <td className="td">{p.phonenumber}</td>
+  </tr>
+  <tr className="tr">
+    <th className="th">Total experience</th>
+    <td className="td">{p.totalYearsExp}</td>
+  </tr>
+  <tr className="tr">
+    <th className="th">Cuompanyrrent C</th>
+    <td className="td">{p.currentCompany}</td>
+  </tr>
+  <tr className="tr">
+    <th className="th">Current CTC</th>
+    <td className="td">{p.currentCtc}</td>
+  </tr>
+  <tr className="tr">
+    <th className="th">Expected CTC</th>
+    <td className="td">{p.expectedCtc}</td>
+  </tr>
+  {/* <tr className="tr">
+    <th className="th">Firstname</th>
+    <td className="td">{p.firstname}</td>
+  </tr>
+   */}
+</table>
 
 								</div>
 							</Swipeable>

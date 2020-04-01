@@ -15,10 +15,9 @@ const images = [
 const profiles = [
   {
     "image": "https://picsum.photos/400/300/?image=926",
-    "firstname": "name0",
-    "lastname": "last0",
-    "dob": "1 jan 2020",
-    "phonenumber": "292929012",
+    "firstname": "Sanjay",
+    "lastname": "Joshi",
+    "phonenumber": "7946138521",
     "totalYearsExp": "5",
     "currentCompany": " Flipkart",
     "currentCtc": "8L",
@@ -26,23 +25,23 @@ const profiles = [
   },
   {
     "image": "https://picsum.photos/400/300/?image=925",
-    "firstname": "name1",
-    "lastname": "last1",
-    "dob": "1 jan 2020",
-    "phonenumber": "292929012",
+    "firstname": "Ayansh",
+    "lastname": "Shetty",
+    
+    "phonenumber": "9008254789",
     "totalYearsExp": "5",
-    "currentCompany": " Flipkart",
+    "currentCompany": " Amazon",
     "currentCtc": "8L",
     "expectedCtc": "10L"
   },
   {
     "image": "https://picsum.photos/400/300/?image=924",
-    "firstname": "name2",
-    "lastname": "last2",
-    "dob": "1 jan 2020",
-    "phonenumber": "292929012",
+    "firstname": "Bhavya",
+    "lastname": "K",
+    
+    "phonenumber": "9874563214",
     "totalYearsExp": "5",
-    "currentCompany": " Flipkart",
+    "currentCompany": " Razor",
     "currentCtc": "8L",
     "expectedCtc": "10L"
   },

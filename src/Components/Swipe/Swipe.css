@@ -28,6 +28,7 @@
     height: 500px;
     position: relative;
     overflow: hidden;
+    background-color:lightgoldenrodyellow;
     
     
   }
@@ -92,3 +93,56 @@
       transform: rotate(135deg);
       -webkit-transform: rotate(135deg);
     }
+
+    table {
+        border: 1px solid black;
+        
+        border-spacing: 0;
+        padding-left: 30px;
+       margin:10px;
+       width:500px;
+        
+      }
+
+
+      .th{
+        text-align: center;
+        color:darkblue;
+        padding:15px;  
+      }
+
+      .td{
+        text-align: center;
+        color:maroon;
+        padding:15px;  
+        font-weight: 500px;
+     font-family: 'Times New Roman', Times, serif;
+        font-size: medium;
+
+      }
+
+      .main{
+          display: flex;
+          flex-direction: row;
+      }
+
+      .image{
+          width:100px;
+          height: 100px;
+          float: right; ;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-right: 30px;
+      }
+
+     .typo{
+  
+        font-family: "Roboto medium";
+        font-size : 40px;
+        padding-top:30px;
+       
+        text-align: "center";
+        color:darkblue;
+        
+    
+  }
